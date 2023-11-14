@@ -7,8 +7,7 @@ export const data = [
         icon: <CarTabler />,
         title: 'Largest Dealership of Cars',
         content: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.'
-    },
-    {
+    }, {
         icon: <CarSide />,
         title: 'Unlimited Repair Warranty',
         content: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.'
@@ -18,4 +17,7 @@ export const data = [
         title: 'Insurance Support',
         content: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.'
     }
-];
+
+]
+
+
