@@ -11,7 +11,7 @@ export const Pagination: React.FC = () => {
         setCurrentPage(pageNumber)
     }
 
-    const pageNumers = Array.from({ length: Math.ceil(data.length) / intemsPerPage }, ((_, i) => i + 1))
+    const pageNumbers = Array.from({ length: Math.ceil(data.length) / intemsPerPage }, ((_, i) => i + 1))
     return (
         <div>
             {currentData.map((item) => (
@@ -27,13 +27,13 @@ export const Pagination: React.FC = () => {
                     </div>
                 </div>
             ))}
-            <ul className="flex items-center justify-center space-x-4 translate-y-6">
-                {pageNumers.map((pageNumer) => (
-                    <button onClick={() => handlePageChange(pageNumer)} >
-                        <li key={pageNumer}>
-                            {pageNumer}
-                        </li>
-                    </button>
+            <ul className="flex items-center justify-center space-x-4 translate-y-8 ">
+                {pageNumbers.map((pageNumber) => (
+                    <li key={pageNumber}>
+                        <button type="button" onClick={() => handlePageChange(pageNumber)} className="rounded shrink-0 w-[30px] h-[20px] bg-[#7dd3fc] hover:bg-[#0000ff] hover:text-white flex items-center justify-center">
+                            {pageNumber}
+                        </button>
+                    </li>
                 ))}
             </ul>
         </div>
