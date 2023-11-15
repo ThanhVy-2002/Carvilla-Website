@@ -58,11 +58,11 @@ export const Header: FC = () => {
                 <NewCars />
             </div>
 
-            <div ref={refFeaturedCars}>
+            <div ref={refFeaturedCars} className="translate-y-[200px]">
                 <FeaturedCars />
             </div>
 
-            <div>
+            <div className="translate-y-[300px] bg-[#f4f4f5] h-[600px] flex flex-col items-center justify-center">
                 <Clients/>
             </div>
         </>
