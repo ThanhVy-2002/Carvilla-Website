@@ -3,6 +3,7 @@ import { ButtonProps } from "../Button/ButtonProps";
 import welcomeBanner from '../../Assets/welcome-banner.jpg'
 import { Home } from "../Home/Home";
 import { Service } from "../Service/Service";
+import { NewCars } from "../NewCars/NewCars";
 
 export const Header: FC = () => {
     const refHome = useRef<HTMLDivElement>(null)
@@ -17,6 +18,12 @@ export const Header: FC = () => {
         refService.current?.scrollIntoView({ behavior: 'smooth' })
     }
 
+    const refNewCars = useRef<HTMLDivElement>(null)
+
+    const handleClickNewCars = () => {
+        refNewCars.current?.scrollIntoView({ behavior: 'smooth' })
+    }
+
     return (
         <>
             <div className="flex flex-row space-x-[100px] bg-[black]">
@@ -25,7 +32,7 @@ export const Header: FC = () => {
                     <ButtonProps label='HOME' onClick={handleClickHome} />
                     <ButtonProps label='SERVICE' onClick={handleClickService} />
                     <ButtonProps label='FEATURED CARS' />
-                    <ButtonProps label='NEW CARS' />
+                    <ButtonProps label='NEW CARS' onClick={handleClickNewCars}/>
                     <ButtonProps label='BRANDS' />
                     <ButtonProps label='CONTACT' />
                 </div>
@@ -36,6 +43,10 @@ export const Header: FC = () => {
             </div>
             <div ref={refService}>
                 <Service />
+            </div>
+
+            <div ref={refNewCars}>
+                <NewCars />
             </div>
         </>
 

@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-
-
 interface ButtonProps {
     label?: React.ReactNode;
     className?: string;
-    onClick?: ()=>void
+    onClick?: () => void
 }
 
 export const ButtonProps: React.FC<ButtonProps> = ({
     label,
     className,
-    onClick
+    onClick,
+   
 }) => {
     const handleClick = () => {
         if (onClick) {
