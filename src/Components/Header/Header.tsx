@@ -6,6 +6,7 @@ import { Service } from "../Service/Service";
 import { NewCars } from "../NewCars/NewCars";
 import { FeaturedCars } from "../FeaturedCars/FeaturedCars";
 import { Clients } from "../Clients/Clients";
+import { Contact } from "../Contact/Contact";
 
 export const Header: FC = () => {
     const refHome = useRef<HTMLDivElement>(null)
@@ -32,6 +33,11 @@ export const Header: FC = () => {
         refFeaturedCars.current?.scrollIntoView({ behavior: 'smooth' })
     }
 
+    const refContact = useRef<HTMLDivElement>(null)
+
+    const handleClickContact = () => {
+        refContact.current?.scrollIntoView({ behavior: 'smooth' })
+    }
 
     return (
         <>
@@ -43,7 +49,7 @@ export const Header: FC = () => {
                     <ButtonProps label='FEATURED CARS' onClick={handleClickFeaturedCars} />
                     <ButtonProps label='NEW CARS' onClick={handleClickNewCars} />
                     <ButtonProps label='BRANDS' />
-                    <ButtonProps label='CONTACT' />
+                    <ButtonProps label='CONTACT' onClick={handleClickContact}/>
                 </div>
             </div>
             <img src={welcomeBanner} className="opacity-1" />
@@ -64,6 +70,10 @@ export const Header: FC = () => {
 
             <div className="translate-y-[300px] bg-[#f4f4f5] h-[600px] flex flex-col items-center justify-center">
                 <Clients/>
+            </div>
+
+            <div ref={refContact} className="translate-y-[500px]">
+                <Contact/>
             </div>
         </>
 

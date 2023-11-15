@@ -12,7 +12,7 @@ export const FeaturedCars: React.FC = () => {
             </div>
             <div className="grid grid-rows-3 grid-flow-col items-center justify-center space-x-4 translate-y-6">
                 {data.map((item) => (
-                    <div className="h-[350px] ">
+                    <div className="h-[350px]">
                         <div className="flex flex-col items-center divide-y divide-slate-300 border w-[300px] h-[180px] shrink-0 rounded-[5px] bg-white border-slate-300">
                             <span className="translate-y-3 ">{item.img}</span>
                             <p className="translate-y-7">{item.mode}</p>
