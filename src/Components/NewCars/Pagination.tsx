@@ -13,7 +13,7 @@ export const Pagination: React.FC = () => {
 
     const pageNumbers = Array.from({ length: Math.ceil(data.length) / intemsPerPage }, ((_, i) => i + 1))
     return (
-        <div>
+        <>
             {currentData.map((item) => (
                 <div key={item.title} className="flex flex-row space-x-[30px]">
                     <div>
@@ -36,7 +36,7 @@ export const Pagination: React.FC = () => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </>
     )
 
 }

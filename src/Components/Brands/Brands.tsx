@@ -25,7 +25,7 @@ export const Brands: React.FC = () => {
     return (
         <>
         {data.map((item)=>(
-            <div>
+            <div className="flex flex-row space-x-4 items-center justify-center ">
                 {item.br1}
                 {item.br2}
                 {item.br3}

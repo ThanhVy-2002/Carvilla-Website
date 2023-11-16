@@ -7,6 +7,8 @@ import { NewCars } from "../NewCars/NewCars";
 import { FeaturedCars } from "../FeaturedCars/FeaturedCars";
 import { Clients } from "../Clients/Clients";
 import { Contact } from "../Contact/Contact";
+import { Brands } from "../Brands/Brands";
+
 
 export const Header: FC = () => {
     const refHome = useRef<HTMLDivElement>(null)
@@ -39,16 +41,22 @@ export const Header: FC = () => {
         refContact.current?.scrollIntoView({ behavior: 'smooth' })
     }
 
+    const refBrands = useRef<HTMLDivElement>(null)
+
+    const handleClickBrands = () => {
+        refBrands.current?.scrollIntoView({ behavior: 'smooth' })
+    }
+
     return (
         <>
-            <div className="flex flex-row space-x-[100px] bg-[black]">
-                <div className="font-['Cambo'] text-[30px] translate-x-[35px] text-white">CARVILLA</div>
+            <div className="flex flex-row space-x-[100px] bg-[black] h-[80px] fixed w-full top-0 z-10">
+                <div className="font-['Cambo'] text-[30px] translate-x-[35px] text-white flex items-center">CARVILLA</div>
                 <div className="flex space-x-[20px] justify-center">
                     <ButtonProps label='HOME' onClick={handleClickHome} />
                     <ButtonProps label='SERVICE' onClick={handleClickService} />
                     <ButtonProps label='FEATURED CARS' onClick={handleClickFeaturedCars} />
                     <ButtonProps label='NEW CARS' onClick={handleClickNewCars} />
-                    <ButtonProps label='BRANDS' />
+                    <ButtonProps label='BRANDS' onClick={handleClickBrands}/>
                     <ButtonProps label='CONTACT' onClick={handleClickContact}/>
                 </div>
             </div>
@@ -70,6 +78,10 @@ export const Header: FC = () => {
 
             <div className="translate-y-[300px] bg-[#f4f4f5] h-[600px] flex flex-col items-center justify-center">
                 <Clients/>
+            </div>
+
+            <div ref={refBrands} className="flex items-center justify-center translate-y-[400px]">
+                <Brands/>
             </div>
 
             <div ref={refContact} className="translate-y-[500px]">

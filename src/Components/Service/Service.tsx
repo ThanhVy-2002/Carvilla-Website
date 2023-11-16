@@ -81,7 +81,6 @@ export const Service: React.FC = () => {
                     translate-y-[10px] translate-x-[105px] w-[15px] h-1 bg-black">
                     </div>
                 </div>
-
             ))}
         </div>
     </>
