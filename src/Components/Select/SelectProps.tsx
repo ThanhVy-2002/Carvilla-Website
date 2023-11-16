@@ -1,10 +1,9 @@
 import React from "react";
+import { ButtonProps } from "../Button/ButtonProps";
 
-interface SelectProps {
+interface SelectProps extends ButtonProps{
     icon?: React.ReactNode
-    label?: string;
     value?: string;
-    className?: string;
     option?: { value: string; label: string }[];
     onChange?: (e: React.ChangeEvent<HTMLSelectElement>) => void
 }

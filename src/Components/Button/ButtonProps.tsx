@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-interface ButtonProps {
+export interface ButtonProps {
     label?: React.ReactNode;
     className?: string;
     onClick?: () => void
