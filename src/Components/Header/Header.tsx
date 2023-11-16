@@ -80,11 +80,11 @@ export const Header: FC = () => {
                 <Clients/>
             </div>
 
-            <div ref={refBrands} className="flex items-center justify-center translate-y-[400px]">
+            <div ref={refBrands} className="flex items-center justify-center translate-y-[450px]">
                 <Brands/>
             </div>
 
-            <div ref={refContact} className="translate-y-[500px]">
+            <div ref={refContact} className="translate-y-[600px]">
                 <Contact/>
             </div>
         </>
