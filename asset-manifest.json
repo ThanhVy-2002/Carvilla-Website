@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/ThanhVy-2002.github.io/deploy-github/static/css/main.a55141e1.css",
+    "main.js": "/ThanhVy-2002.github.io/deploy-github/static/js/main.288b6f94.js",
+    "static/js/787.b1705349.chunk.js": "/ThanhVy-2002.github.io/deploy-github/static/js/787.b1705349.chunk.js",
+    "static/media/ncm2.png": "/ThanhVy-2002.github.io/deploy-github/static/media/ncm2.3526d79ee79c4ace3624.png",
+    "static/media/ncm3.png": "/ThanhVy-2002.github.io/deploy-github/static/media/ncm3.42ef491fbac9f84ae9b4.png",
+    "static/media/ncm1.png": "/ThanhVy-2002.github.io/deploy-github/static/media/ncm1.65a85e2334ae4b49cc11.png",
+    "static/media/welcome-banner.jpg": "/ThanhVy-2002.github.io/deploy-github/static/media/welcome-banner.54d5ae4efc8c35247191.jpg",
+    "static/media/fc7.png": "/ThanhVy-2002.github.io/deploy-github/static/media/fc7.1ef2071100cf41750389.png",
+    "static/media/fc4.png": "/ThanhVy-2002.github.io/deploy-github/static/media/fc4.add4e0daa94d340a3d1d.png",
+    "static/media/fc2.png": "/ThanhVy-2002.github.io/deploy-github/static/media/fc2.90d8b734ab3870d0f186.png",
+    "static/media/fc5.png": "/ThanhVy-2002.github.io/deploy-github/static/media/fc5.6bc881886ab6a88e5dd0.png",
+    "static/media/fc8.png": "/ThanhVy-2002.github.io/deploy-github/static/media/fc8.e2396a31dfecd1baf265.png",
+    "static/media/fc6.png": "/ThanhVy-2002.github.io/deploy-github/static/media/fc6.36238473e92f6066cbb1.png",
+    "static/media/fc1.png": "/ThanhVy-2002.github.io/deploy-github/static/media/fc1.d9482fb2fd3f99710480.png",
+    "static/media/fc3.png": "/ThanhVy-2002.github.io/deploy-github/static/media/fc3.bcb01bb441efe467569b.png",
+    "static/media/c3.png": "/ThanhVy-2002.github.io/deploy-github/static/media/c3.cb486d940f8d1c1926bd.png",
+    "index.html": "/ThanhVy-2002.github.io/deploy-github/index.html",
+    "main.a55141e1.css.map": "/ThanhVy-2002.github.io/deploy-github/static/css/main.a55141e1.css.map",
+    "main.288b6f94.js.map": "/ThanhVy-2002.github.io/deploy-github/static/js/main.288b6f94.js.map",
+    "787.b1705349.chunk.js.map": "/ThanhVy-2002.github.io/deploy-github/static/js/787.b1705349.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a55141e1.css",
+    "static/js/main.288b6f94.js"
+  ]
+}
