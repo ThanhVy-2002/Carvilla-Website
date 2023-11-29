@@ -2,17 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ----------- Non-Retina Screens ----------- */
-@media screen
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-}
- 
-/* ----------- Retina Screens ----------- */
-@media screen
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-}
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  
+{ }  
